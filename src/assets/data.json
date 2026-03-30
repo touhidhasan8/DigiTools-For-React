@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "description": "Perfect for beginners",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "feature1": "10+ templates",
+    "feature2": "Basic customization",
+    "feature3": "Export to PDF",
+    "icon": "FaUser"
+  },
+  {
+    "id": 2,
+    "name": "Starter Plan",
+    "description": "Good for personal use",
+    "price": 199,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature1": "20+ templates",
+    "feature2": "Simple editing",
+    "feature3": "Download PDF",
+    "icon": "FaRocket"
+  },
+  {
+    "id": 3,
+    "name": "Pro Plan",
+    "description": "Advanced resume builder",
+    "price": 499,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "feature1": "100+ templates",
+    "feature2": "ATS optimization",
+    "feature3": "Custom sections",
+    "feature4": "Export PDF & DOCX",
+    "icon": "FaStar"
+  },
+  {
+    "id": 4,
+    "name": "Business Plan",
+    "description": "For small teams",
+    "price": 1499,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "feature1": "Unlimited templates",
+    "feature2": "Team access",
+    "feature3": "Priority support",
+    "icon": "FaUsers"
+  },
+  {
+    "id": 5,
+    "name": "Premium Plan",
+    "description": "Best for professionals",
+    "price": 2999,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "feature1": "All features included",
+    "feature2": "Advanced analytics",
+    "feature3": "Faster export",
+    "feature4": "Cloud storage",
+    "icon": "FaCrown"
+  },
+  {
+    "id": 6,
+    "name": "Enterprise Plan",
+    "description": "For large organizations",
+    "price": 5999,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "feature1": "Unlimited access",
+    "feature2": "Dedicated manager",
+    "feature3": "Custom solutions",
+    "feature4": "24/7 support",
+    "icon": "FaBriefcase"
+  }
+]
