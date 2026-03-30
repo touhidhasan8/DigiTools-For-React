@@ -22,7 +22,7 @@ const Card = ({ loadData }) => {
                 <button onClick={() => setProductType('cart')} className={`${productType === "cart" ? "btn btn-primary rounded-full" : "btn  rounded-full"}`}>Cart</button>
             </div>
 
-            <div>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                 {
                     productType==='product'? data.map((product=><CardData key={product.id} product={product}></CardData>)):""
                 }
