@@ -10,7 +10,7 @@ const CardData = ({ product, selectCard, setSelectCard }) => {
     }
 
     return (
-        <div className="card  bg-base-100 shadow-sm">
+        <div className="card  bg-base-100 shadow-sm container mx-auto">
             <div className="card-body">
                 <div className='flex justify-end'>
                     <h1 className='badge badge-warning'> {tag}</h1>

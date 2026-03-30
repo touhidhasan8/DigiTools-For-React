@@ -1,7 +1,9 @@
 import React from 'react';
 import { CiShoppingCart } from 'react-icons/ci';
 
-const Navbar = () => {
+const Navbar = ({ selectCard }) => {
+    console.log(selectCard);
+
     return (
         <div className="navbar bg-base-100 shadow-sm px-3 md:px-6">
 
@@ -44,7 +46,7 @@ const Navbar = () => {
                 <div className="relative inline-block">
                     <CiShoppingCart className="text-xl md:text-2xl" />
                     <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] md:text-xs px-1.5 py-0.5 rounded-full">
-                        0
+                        {selectCard.length}
                     </span>
                 </div>
 

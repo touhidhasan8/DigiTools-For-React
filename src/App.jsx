@@ -12,7 +12,7 @@ const [selectCard , setSelectCard]=useState([])
   return (
     <div>
         <Suspense fallback={<Loadings/>}>
-          <Navbar></Navbar>
+          <Navbar selectCard={selectCard} ></Navbar>
           <Banner></Banner>
           <PlayGround></PlayGround>
           <Card loadData={loadData} selectCard={selectCard} setSelectCard={setSelectCard} ></Card>
