@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-const CardData = ({ product }) => {
-    const { name, description, price, tag, feature1, feature2, feature3, image } = product
+const CardData = ({ product, selectCard, setSelectCard }) => {
+    const { name, description, price, tag, feature1, feature2, feature3, image } = product;
+    const [isSelect, setSelect] = useState(false)
+    const handleSelect = () => {
+        setSelect(true)
+        setSelectCard([...selectCard, product])
+    }
 
     return (
         <div className="card  bg-base-100 shadow-sm">
             <div className="card-body">
                 <div className='flex justify-end'>
-                        <h1 className='badge badge-warning'> {tag}</h1>
+                    <h1 className='badge badge-warning'> {tag}</h1>
                 </div>
                 <div>
-                    <img src={image} alt={name}/>
+                    <img src={image} alt={name} />
                 </div>
                 <div className="flex justify-between">
                     <h2 className="text-2xl font-bold">{name}</h2>
@@ -37,7 +42,12 @@ const CardData = ({ product }) => {
 
                 </ul>
                 <div className="mt-6">
-                    <button className="btn btn-primary btn-block">Subscribe</button>
+                    <button
+                        onClick={handleSelect}
+                        className={`btn btn-block ${isSelect ? "btn-success" : "btn-primary"}`}
+                    >
+                        {isSelect ? "✔ Added To Card " : "Buy Now"}
+                    </button>
                 </div>
             </div>
         </div>
