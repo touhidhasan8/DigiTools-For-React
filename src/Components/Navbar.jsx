@@ -2,7 +2,7 @@ import React from 'react';
 import { CiShoppingCart } from 'react-icons/ci';
 
 const Navbar = ({ selectCard }) => {
-    console.log(selectCard);
+    
 
     return (
         <div className="navbar bg-base-100 shadow-sm px-3 md:px-6">

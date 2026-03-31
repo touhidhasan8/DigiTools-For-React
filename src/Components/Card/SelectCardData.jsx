@@ -2,16 +2,18 @@ import React from 'react';
 import SelectCard from './SelectCard';
 import Empty from './Empty';
 
-const SelectCardData = ({selectCard }) => {
-    console.log(selectCard);
+const SelectCardData = ({selectCard,setSelectCard }) => {
+   
     
     return (
         <div className=' '>
             {
-                selectCard.length=== 0 ? <Empty></Empty> :selectCard.map(item=><SelectCard key={item.id} item={item}></SelectCard>)
+                selectCard.length=== 0 ? <Empty></Empty> :<SelectCard selectCard={selectCard} setSelectCard={setSelectCard}></SelectCard>
             }
         </div>
     );
 };
 
 export default SelectCardData;
+
+

@@ -11,14 +11,14 @@ const Banner = () => {
         {/* Badge */}
         <div className="badge badge-soft badge-primary flex items-center gap-2 mx-auto md:mx-0 w-fit">
           <img src={AiImg} alt="" className="w-4 h-4" />
-          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold text-xs md:text-sm">
+          <span className="bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold text-xs md:text-sm">
             New: AI-Powered Tools Available
           </span>
         </div>
 
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight">
-          Supercharge Your Digital Workflow
+          Supercharge Your <span className="text-purple-500">Digital Workflow</span>
         </h1>
 
         {/* Description */}

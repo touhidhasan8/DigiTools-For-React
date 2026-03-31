@@ -4,12 +4,12 @@ import SelectCardData from './SelectCardData';
 
 const Card = ({ loadData, selectCard, setSelectCard }) => {
     const data = use(loadData)
-    // console.log(data);
+
 
     const [productType, setProductType] = useState('product')
 
     return (
-        <div className='space-y-5 container mx-auto'>
+        <div className='space-y-5 container mx-auto mb-10'>
             <div className='space-y-5 text-center '>
                 <h1 className='text-5xl font-semibold'>Premium Digital Tools</h1>
                 <p className='text-xl text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>

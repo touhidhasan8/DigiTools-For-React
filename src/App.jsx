@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar'
 import Banner from './Components/Banner/Banner'
 import PlayGround from './Components/Banner/PlayGround'
 import Card from './Components/Card/Card'
+import { ToastContainer } from 'react-toastify'
+import ThreeSteep from './Components/ThreeStep/ThreeSteep'
 
 function App() {
   const loadData = fetch('/data.json').then(res => res.json())
@@ -16,7 +18,10 @@ const [selectCard , setSelectCard]=useState([])
           <Banner></Banner>
           <PlayGround></PlayGround>
           <Card loadData={loadData} selectCard={selectCard} setSelectCard={setSelectCard} ></Card>
+          <ThreeSteep></ThreeSteep>
         </Suspense>
+         <ToastContainer />
+
     </div>
   )
 }

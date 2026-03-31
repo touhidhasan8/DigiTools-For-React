@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
 const CardData = ({ product, selectCard, setSelectCard }) => {
-    const { name, description, price, tag, feature1, feature2, feature3, image } = product;
+    const { name, description, price, tag, feature1, feature2, feature3, image,period } = product;
     const [isSelect, setSelect] = useState(false)
     const handleSelect = () => {
         setSelect(true)
         setSelectCard([...selectCard, product])
+         toast(`${name} is Selected`)
     }
 
     return (
@@ -25,7 +27,7 @@ const CardData = ({ product, selectCard, setSelectCard }) => {
                 <ul className="mt-6 flex flex-col gap-2 text-xs">
 
                     <li> {description} </li>
-                    <span className="text-xl">{price}</span>
+                    <span className="text-xl">${price} / {period}</span>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                         <span>{feature1}</span>
