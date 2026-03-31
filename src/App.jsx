@@ -7,6 +7,7 @@ import PlayGround from './Components/Banner/PlayGround'
 import Card from './Components/Card/Card'
 import { ToastContainer } from 'react-toastify'
 import ThreeSteep from './Components/ThreeStep/ThreeSteep'
+import Transparent from './Components/ThreeStep/Transparent'
 
 function App() {
   const loadData = fetch('/data.json').then(res => res.json())
@@ -19,6 +20,7 @@ const [selectCard , setSelectCard]=useState([])
           <PlayGround></PlayGround>
           <Card loadData={loadData} selectCard={selectCard} setSelectCard={setSelectCard} ></Card>
           <ThreeSteep></ThreeSteep>
+          <Transparent></Transparent>
         </Suspense>
          <ToastContainer />
 
