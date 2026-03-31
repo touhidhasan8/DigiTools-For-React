@@ -4,7 +4,7 @@ const Transparent = () => {
     return (
         <div className='container mx-auto space-y-6 bg-base-200 mb-10'>
             <div className='text-center space-y-5 mt-20'>
-                <h1 className='text-5xl font-bold'>Simple, Transparent Pricing</h1>
+                <h1 className=' text-2xl md:text-5xl font-bold'>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             <div className='grid  grid-cols-1 md:grid-cols-3 gap-10 space-y-5'>

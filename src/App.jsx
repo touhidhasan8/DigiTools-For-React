@@ -8,6 +8,8 @@ import Card from './Components/Card/Card'
 import { ToastContainer } from 'react-toastify'
 import ThreeSteep from './Components/ThreeStep/ThreeSteep'
 import Transparent from './Components/ThreeStep/Transparent'
+import Workflow from './Components/ThreeStep/Workflow'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const loadData = fetch('/data.json').then(res => res.json())
@@ -21,6 +23,8 @@ const [selectCard , setSelectCard]=useState([])
           <Card loadData={loadData} selectCard={selectCard} setSelectCard={setSelectCard} ></Card>
           <ThreeSteep></ThreeSteep>
           <Transparent></Transparent>
+          <Workflow></Workflow>
+          <Footer></Footer>
         </Suspense>
          <ToastContainer />
 
